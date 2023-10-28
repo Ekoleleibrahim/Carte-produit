@@ -1,5 +1,4 @@
 body{
-    width: 100%;
     margin: 0 auto;
     padding: 80px 100px;
     box-sizing: border-box;
@@ -9,6 +8,7 @@ body{
 
 .conteneur
 {
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 25%;
@@ -95,7 +95,6 @@ button
 @media screen and (max-width:1350px) {
     .conteneur
     {
-        width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 100%;
