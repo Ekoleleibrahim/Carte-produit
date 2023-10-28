@@ -95,6 +95,7 @@ button
 @media screen and (max-width:1350px) {
     .conteneur
     {
+        width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 100%;
