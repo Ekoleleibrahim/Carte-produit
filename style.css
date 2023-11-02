@@ -17,12 +17,11 @@ body{
 
 .fond
 {
-    width:100%;
-    height: auto;
-    background-image:url(images/image-product-desktop.jpg) ;
+    background:url(images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px 0 0 15px;
+    
 
 }
 
@@ -83,7 +82,7 @@ button
     width: 100%;
     padding:15px 30px;
     color: white;
-    background-color: #1b9476;
+    background-color: #030b09;
     border-radius: 5px;
     background-image: url(images/icon-cart.svg);
     background-repeat: no-repeat;
@@ -93,6 +92,9 @@ button
 }
 
 @media screen and (max-width:1350px) {
+    body{
+        padding: 50px;
+    }
     .conteneur
     {
         margin: 0 auto;
@@ -103,9 +105,7 @@ button
 
     .fond
     {
-        width:auto;
-        height:auto;
-        padding: 200px 80px;
+        padding:100px;
         background-image:url(images/image-product-mobile.jpg) ;
         border-radius: 15px 15px 0 0;
 
@@ -113,12 +113,106 @@ button
 
     .element
     {
+        width: auto;
         border-radius: 0 0 10px 10px;
+    }
+
+    h1{
+        font-size: 30px;
     }
     button
     {
-        background-position: 380px;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        width: 100%;
+        padding:15px 30px;
+        color: white;
+        background-color: #1b9476;
+        border-radius: 5px;
+        background-image: url(images/icon-cart.svg);
+        background-repeat: no-repeat;
+        background-position: 100px;
+        text-align: center;
+        cursor:pointer;
     }
 
 
+}
+
+@media screen and (max-width:490px) {
+
+    body{
+        padding: 20px;
+    }
+
+    .fond
+    {
+        padding:80px;
+        background-image:url(images/image-product-mobile.jpg) ;
+        border-radius: 5px 5px 0 0;
+    }
+
+    h1
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    p:first-child
+    {
+        letter-spacing: 0;
+    }
+
+
+    .element
+    {
+        width:fit-content;
+        padding: 20px;
+    }
+
+    .flex
+    {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        margin:20px 0;
+    }
+
+    button
+    {
+        outline: none;
+        border: none;
+        font-weight: bold;
+        width: 100%;
+        padding:15px 30px;
+        color: white;
+        background-color: #1b9476;
+        border-radius: 5px;
+        background-image: url(images/icon-cart.svg);
+        background-repeat: no-repeat;
+        background-position: 50px;
+        text-align: center;
+        cursor:pointer;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    button
+    {
+        outline: none;
+        border: none;
+        font-weight: bold;
+        width: 100%;
+        padding:15px 30px;
+        color: white;
+        background-color: #1b9476;
+        border-radius: 5px;
+        background-image: url(images/icon-cart.svg);
+        background-repeat: no-repeat;
+        background-position: 15px;
+        text-align: center;
+        cursor:pointer;
+    }
 }
